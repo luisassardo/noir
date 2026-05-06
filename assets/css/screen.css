@@ -44,6 +44,7 @@ production stylesheet in assets/built/screen.css
   21.2. Footer bar
   21.3. Footer signup
 22. Lightbox
+23. Noir — Custom homepage (pd-hero, pd-card, pd-grid)
 
 */
 
@@ -3332,4 +3333,326 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 
 .pswp--minimal--dark .pswp__top-bar {
     background: none;
+}
+
+/* 23. Noir — Custom homepage (pd-hero, pd-card, pd-grid)
+/* ---------------------------------------------------------- */
+
+/* Hero section — Row 1 */
+
+.pd-hero {
+    padding: 0;
+}
+
+.pd-hero-inner {
+    position: relative;
+}
+
+.pd-hero-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+.pd-hero-image {
+    margin: 0;
+    aspect-ratio: 21 / 9;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.pd-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.pd-hero-link:hover .pd-hero-image img {
+    transform: scale(1.02);
+}
+
+.pd-hero-content {
+    padding: 28px 0 12px;
+}
+
+.pd-hero-tag {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ghost-accent-color, #f050ae);
+    margin-bottom: 12px;
+}
+
+.pd-hero-title {
+    font-size: clamp(2.6rem, 3.5vw, 4.4rem);
+    font-weight: 700;
+    line-height: 1.12;
+    margin: 0 0 16px;
+    color: var(--color-darker-gray);
+}
+
+.pd-hero-excerpt {
+    font-size: 1.7rem;
+    line-height: 1.65;
+    color: var(--color-secondary-text);
+    margin: 0 0 20px;
+    max-width: 72ch;
+}
+
+.pd-hero-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 1.4rem;
+    color: var(--color-secondary-text);
+}
+
+.pd-hero-author-img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.pd-hero-author-name {
+    font-weight: 600;
+}
+
+/* Shared separator dot */
+.pd-meta-sep {
+    opacity: 0.4;
+}
+
+/* Section row headers */
+.pd-row-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.pd-row-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-secondary-text);
+    margin: 0;
+}
+
+.pd-row-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--ghost-accent-color, #f050ae);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.pd-row-link:hover {
+    opacity: 0.75;
+}
+
+.pd-row-link svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* Grid layouts */
+.pd-grid {
+    display: grid;
+    gap: 32px;
+}
+
+.pd-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pd-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1100px) {
+    .pd-grid--4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .pd-grid--3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pd-grid--4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 540px) {
+    .pd-grid--3 {
+        grid-template-columns: 1fr;
+    }
+    .pd-hero-image {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* Section row wrappers */
+.pd-featured-row,
+.pd-opinion-row,
+.pd-latest-row {
+    padding: 64px 0 0;
+}
+
+/* Subscribe CTA row */
+.pd-subscribe {
+    padding: 64px 0 0;
+}
+
+.pd-subscribe-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 48px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.pd-subscribe-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.pd-subscribe-title {
+    font-size: clamp(2rem, 2.5vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    color: var(--color-darker-gray);
+}
+
+.pd-subscribe-desc {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--color-secondary-text);
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .pd-subscribe-inner {
+        flex-direction: column;
+        gap: 28px;
+        padding: 32px 24px;
+    }
+}
+
+/* Post card */
+.pd-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.pd-card-link {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+.pd-card-image {
+    margin: 0;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 6px;
+    background: var(--color-lighter-gray);
+    flex-shrink: 0;
+}
+
+.pd-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.pd-card-link:hover .pd-card-image img {
+    transform: scale(1.04);
+}
+
+.pd-card-image--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pd-card-image-placeholder {
+    font-size: 2.8rem;
+    color: var(--color-mid-gray);
+    opacity: 0.5;
+}
+
+.pd-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.pd-card-tag {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ghost-accent-color, #f050ae);
+}
+
+.pd-card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-darker-gray);
+    margin: 0;
+    flex: 1;
+    transition: opacity 0.2s;
+}
+
+.pd-card-link:hover .pd-card-title {
+    opacity: 0.75;
+}
+
+.pd-card-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 1.3rem;
+    color: var(--color-secondary-text);
+    margin-top: 8px;
+}
+
+.pd-card-author-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.pd-card-author-name {
+    font-weight: 600;
 }
