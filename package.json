@@ -1,13 +1,15 @@
 {
-    "name": "pulso-digital",
-    "description": "A dark, modern editorial theme for independent tech journalism",
+    "name": "noir",
+    "description": "A dark, modern editorial Ghost theme for journalism, newsletters and digital publications",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Pulso Digital"
+        "name": "Luis Assardo",
+        "email": "journalists_opsec@proton.me",
+        "url": "https://quicktheme.online"
     },
     "gpm": {
         "type": "theme",
@@ -19,7 +21,12 @@
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
+        "dark",
+        "editorial",
+        "journalism",
+        "magazine",
+        "newsletter"
     ],
     "browserslist": [
         "defaults"
@@ -163,9 +170,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/luisassardo/pulso-digital.git"
+        "url": "https://github.com/luisassardo/noir.git"
     },
-    "bugs": "https://github.com/luisassardo/pulso-digital/issues",
+    "bugs": "https://github.com/luisassardo/noir/issues",
     "scripts": {
         "dev": "gulp",
         "build": "gulp build",
