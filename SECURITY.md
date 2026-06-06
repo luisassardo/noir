@@ -10,7 +10,7 @@
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
-To report a vulnerability, email: **luisassardo@gmail.com**
+To report a vulnerability, email: **security@j-lab.tools**
 
 Include in your report:
 - Description of the vulnerability and its potential impact
