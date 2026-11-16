@@ -2,7 +2,9 @@
 
 > A dark, modern editorial theme for [Ghost](https://ghost.org/), built for journalism, newsletters, and digital publications that take their content seriously.
 
-**[Live Demo](https://noir.quicktheme.online)** · **[Download](https://github.com/luisassardo/noir/releases/latest)** · **[Report a bug](https://github.com/luisassardo/noir/issues)**
+**[Screenshots](#screenshots)** · **[Download](https://github.com/luisassardo/noir/releases/latest)** · **[Report a bug](https://github.com/luisassardo/noir/issues)**
+
+![Noir homepage on desktop and mobile](screenshots/hero.jpg)
 
 &nbsp;
 
@@ -22,6 +24,27 @@
 - **Ghost card support** — Full styling for all Ghost editor cards
 - **Accessible** — Keyboard navigation, ARIA labels, focus-visible styles, semantic HTML
 - **SEO-friendly** — Structured data, proper heading hierarchy, clean markup
+
+&nbsp;
+
+## Screenshots
+
+Captured from a Ghost 6.36 site running Noir (November 2026). The hosted demo was retired to cut hosting costs, so these captures stand in for it. To try Noir live, upload the [latest release](https://github.com/luisassardo/noir/releases/latest) to any Ghost site or run [Ghost locally](https://ghost.org/docs/install/local/).
+
+<table>
+  <tr>
+    <td width="50%" valign="top"><img src="screenshots/home.jpg" alt="Homepage: hero post, featured row, subscribe call to action, opinion row and latest posts"><br><sub><b>Homepage</b> · hero → featured → subscribe CTA → opinion → latest</sub></td>
+    <td width="50%" valign="top"><img src="screenshots/post.jpg" alt="Post page with title, excerpt, author, feature image and related posts"><br><sub><b>Post</b> · header, feature image, related posts</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><img src="screenshots/section.jpg" alt="Tag archive page"><br><sub><b>Tag archive</b></sub></td>
+    <td width="50%" valign="top"><img src="screenshots/author.jpg" alt="Author archive page"><br><sub><b>Author archive</b></sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><img src="screenshots/about.jpg" alt="Static page template"><br><sub><b>Page template</b></sub></td>
+    <td width="50%" valign="top"><img src="screenshots/mobile.jpg" alt="Mobile views: homepage, post and tag archive"><br><sub><b>Mobile</b> · homepage, post, tag archive</sub></td>
+  </tr>
+</table>
 
 &nbsp;
 

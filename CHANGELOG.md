@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- README now carries a screenshot gallery; the hosted demo (noir.quicktheme.online) was retired.
+
 ## 1.0.0 — 2026-03-16
 
 ### Initial release
