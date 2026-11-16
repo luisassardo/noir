@@ -9,6 +9,7 @@
 ### Changed
 
 - README now carries a screenshot gallery; the hosted demo (noir.quicktheme.online) was retired.
+- `package.json` author URL now points to luisassardo.com instead of the retired demo domain.
 
 ## 1.0.0 — 2026-03-16
 
