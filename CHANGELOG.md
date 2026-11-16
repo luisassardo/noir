@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Fixed
+
+- Email signup forms: the "Enter your email" label rendered on top of the input because the `.gh-sr-only` (screen-reader-only) rule was missing from the stylesheet. The label is now visually hidden and still available to assistive technology.
+
 ### Changed
 
 - README now carries a screenshot gallery; the hosted demo (noir.quicktheme.online) was retired.
